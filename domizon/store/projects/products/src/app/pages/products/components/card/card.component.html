@@ -1,0 +1,18 @@
+<div class="p-6 transition duration-500 ease-in-out transform rounded-lg cursor-pointer card hover:shadow-lg hover:bg-violet-200">
+  <div class="flex justify-center overflow-hidden h-60">
+    <img class="mb-6 rounded h-70" width="180" height="260" [ngSrc]="product.image" [alt]="product.image" />
+  </div>
+  <div class="flex flex-col items-center p-4">
+    <p class="text-xs font-light text-center text-gray-400">
+      {{ product.category | titlecase }}
+    </p>
+    <h2 class="mt-1 text-center text-gray-800">
+      {{ product.title | slice : 0 : 20 }}
+    </h2>
+    <p class="mt-1 text-center text-gray-800">{{ product.price | currency }}</p>
+    <dominizon-quantity-changer [productId]="product.id" (quantityProductChanged)="onQuantityProductChange($event)" />
+    <dominizon-add-to-cart [productId]="product.id" (addProduct)="onAddProduct($event)"/>
+    <p *ngIf="shouldShowProductAddedText$()"  class="p-2 my-3 text-sm font-semibold rounded bold fadeInOut">Product added....</p>
+  </div>
+</div>
+

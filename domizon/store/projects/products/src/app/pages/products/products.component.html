@@ -1,0 +1,9 @@
+<ng-container *ngIf="products$ | async as products; else loading">
+<!--   {{isCartEmpty}} - isCartEmpty -->
+  <div class="flex flex-wrap -m-4">
+    <dominizon-card class="p-4 lg:w-1/4 md:w-1/2" *ngFor="let product of products" [product]="product" />
+  </div>
+</ng-container>
+<ng-template #loading>
+  Loading......
+</ng-template>
