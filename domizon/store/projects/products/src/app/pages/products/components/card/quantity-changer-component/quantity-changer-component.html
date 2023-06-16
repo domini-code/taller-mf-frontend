@@ -2,16 +2,16 @@
   <button
   [disabled]="isBtnDisabled()"
   (click)="onDecrement()"
-    class="inline-flex items-center px-2 py-1 text-gray-600 bg-white border border-r border-gray-200 rounded-l hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50">
+    class="inline-flex items-center px-2 py-1 text-gray-600  bg-white border-gray-200 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50">
       <dominizon-svg-minus />
   </button>
   <div
-    class="inline-flex items-center px-4 py-1 text-gray-600 bg-gray-100 border-t border-b border-gray-100 select-none hover:bg-gray-100">
+    class="inline-flex items-center px-4 py-1 text-gray-600  border-gray-100 select-none">
    {{count$()}}
   </div>
   <button
    (click)="onIncrement()"
-    class="inline-flex items-center px-2 py-1 text-gray-600 bg-white border border-r border-gray-200 rounded-r hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50">
+    class="inline-flex items-center px-2 py-1 text-gray-600 bg-white rounded border-gray-200 rounded-r hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50">
     <dominizon-svg-plus />
   </button>
 </div>

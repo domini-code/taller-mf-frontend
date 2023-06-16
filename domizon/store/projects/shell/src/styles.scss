@@ -1,22 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
+@layer base {
+
+  html, body{
+   @apply font-poppins bg-[#F2F2F7]
   }
 
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
-.fadeInOut {
-  animation: fadeInOut 2s infinite;
+@layer components {
+  .shadow-item {
+    @apply shadow-lg duration-75 shadow-gray-300/20 hover:shadow-2xl hover:shadow-gray-300 transition-all 
+  }
 }

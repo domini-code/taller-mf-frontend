@@ -4,7 +4,11 @@ module.exports = {
     "./projects/products/src/app/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['"Poppins"']
+      }
+    },
   },
   plugins: [],
 }

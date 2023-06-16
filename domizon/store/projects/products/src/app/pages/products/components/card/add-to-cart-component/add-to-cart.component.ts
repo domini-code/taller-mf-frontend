@@ -11,9 +11,7 @@ import { SVGCartComponent } from './components/svg-cart/svg-cart.component';
   selector: 'dominizon-add-to-cart',
   template: ` <button
     (click)="onAddToCart()"
-    class="py-2 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded  active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
-  >
-    Add to cart
+    class="p-2 transition-all  text-gray-700 grid place-content-center bg-gray-100 rounded hover:-translate-y-1 transform-gpu" >
     <dominizon-svg-cart />
   </button>`,
   standalone: true,
