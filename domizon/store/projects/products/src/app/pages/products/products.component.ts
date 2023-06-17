@@ -1,4 +1,4 @@
-import { Component, OnInit, Signal, inject } from '@angular/core';
+import { Component, OnInit, Signal, ViewEncapsulation, inject } from '@angular/core';
 import { ProductsService } from './services/product.service';
 import { Observable, fromEvent } from 'rxjs';
 import { Product } from './interfaces/product.interface';

@@ -49,7 +49,7 @@ const Navbar = () => {
 
   // console.log('isHovering', isHovering);
   return (
-    <nav className='bg-gradient-to-r from-blue-500 to-purple-600'>
+    <nav className='bg-gray-700'>
       <div className='px-2 mx-auto max-w-7xl sm:px-6 lg:px-8'>
         <div className='relative flex items-center justify-between h-16'>
           <div className='flex items-center justify-between flex-1 sm:items-stretch sm:justify-start'>
