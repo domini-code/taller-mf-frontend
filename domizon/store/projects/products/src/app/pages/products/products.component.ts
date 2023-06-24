@@ -6,13 +6,14 @@ import { NgFor, NgIf, AsyncPipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { AddToCartService } from './services/add-to-cart.service';
 import { CardComponent } from './components/card/card.component';
+import { LoadingComponent } from '../../../../../shell/src/app/shared/components/loading/loading.component';
 
 @Component({
   selector: 'dominizon-products',
   templateUrl: './products.component.html',
   standalone: true,
   providers: [ProductsService],
-  imports: [NgIf, NgFor, AsyncPipe, CardComponent, HttpClientModule],
+  imports: [NgIf, NgFor, AsyncPipe, CardComponent, LoadingComponent],
 })
 export class ProductsComponent implements OnInit {
   products$!: Observable<Product[]>;
