@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     redirectTo: '/products',
@@ -15,12 +14,12 @@ const routes: Routes = [
         type: 'module',
         remoteEntry: 'http://localhost:4600/remoteEntry.js',
         exposedModule: './ListProducts',
-      }).then((m) => m.ProductsComponent),
+      }).then((m) => m.AppComponent),
   },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }
